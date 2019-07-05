@@ -1,0 +1,11 @@
+.sidebar-right {
+  width: 350px; }
+  .sidebar-right__betting-slip-check, .sidebar-right__betting-slip {
+    width: 320px;
+    margin: 8px 0 0 15px; }
+  .sidebar-right__betting-slip-check {
+    font-size: 1.2rem; }
+
+@media (max-width: 1023px) {
+  .sidebar-right {
+    display: none; } }

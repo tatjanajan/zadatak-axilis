@@ -9,3 +9,11 @@ body {
   background: #F2F4F6;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 1.6rem; }
+
+.wrapper {
+  display: flex; }
+
+.common-styles__box {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px 0px rgba(227, 227, 227, 0.3), -1px 1px 3px 0px rgba(227, 227, 227, 0.3); }

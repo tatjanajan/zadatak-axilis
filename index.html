@@ -10,6 +10,7 @@
     <title>Superbet - Depozite</title>
 </head>
 <body>
+    <!-- **** HEADER **** -->
     <header class="header">
         <div class="header__left">
             <div class="header__left__wrapper">
@@ -21,7 +22,7 @@
                 <a href="./" class="header__left__logo"></a>
                 <ul class="header__left__menu">
                     <li class="header__left__menu__item header__left__menu__item--selected">Sport</li>
-                    <li class="header__left__menu__item"><span>120</span> Live</li>
+                    <li class="header__left__menu__item header__left__menu__item--live"><span>120</span> Live</li>
                     <li class="header__left__menu__item">Jocuri</li>
                     <li class="header__left__menu__item">Casino Live</li>
                     <li class="header__left__menu__item">Loto</li>
@@ -39,7 +40,7 @@
         <div class="header__right">
             <div class="header__right__user-icon">
                 <i class="icon icon-user_circle"></i>
-                <span class="header__right__user-icon__dot"></span>
+                <span></span>
             </div>
             <div class="header__right__user-data">
                 <p class="header__right__user-data__name">Kristian Frankovic</p>
@@ -49,9 +50,12 @@
 
         </div>
     </header>
+
+    <!-- **** CONTENT **** -->
     <div class="wrapper">
+        <!-- **** SIDEBAR LEFT **** -->
         <aside class="sidebar-left">
-            <ul class="sidebar-left__menu">
+            <ul class="sidebar-left__menu common-styles__box">
                 <li class="sidebar-left__menu__item"><i class="icon icon-chevron_left"></i> înapoi</li>
                 <li class="sidebar-left__menu__item"><i class="icon icon-user"></i> contul meu</li>
                 <li class="sidebar-left__menu__item"><i class="icon icon-ticket_2"></i> pariurile mele</li>
@@ -61,88 +65,96 @@
                 <li class="sidebar-left__menu__item"><i class="icon icon-settings"></i> setări</li>
             </ul>
         </aside>
+        <!-- **** MAIN CONTENT **** -->
         <div class="main">
-            <h2 class="main__heading"><i class="icon icon-deposit"></i> Depozite</h2>
-            <section class="main__card">
-                <h3 class="main__card__heading">Depozit Online <i class="icon icon-chevron_up"></i></h3>
-                <div class="main__card__depozit-info">
-                    <p>Introduceți suma pe care doriți să o depuneți. În pasul următor veți fi întrebat ce metodă preferați să vă alimenteze contul.</p>
-                    <div class="main__card__depozit-info__credit-cards">
-                        <img src="img/mastercard-logo.svg" alt="MasterCard logo">
-                        <img src="img/visa-logo.svg" alt="Visa logo">
-                        <img src="img/skrill-logo.svg" alt="Skrill logo">
-                        <img src="img/paypal-logo.svg" alt="PayPal logo">
+            <h2><i class="icon icon-deposit"></i> Depozite <i class="icon icon-chevron_down"></i></h2>
+            <section class="common-styles__box">
+                <h3>Depozit Online <i class="icon icon-chevron_up"></i></h3>
+                <div class="main__section-wrapper">
+                    <div class="main__section-info">
+                        <p>Introduceți suma pe care doriți să o depuneți. În pasul următor veți fi întrebat ce metodă preferați să vă alimenteze contul.</p>
+                        <div class="main__section-info__credit-cards">
+                            <img src="img/mastercard-logo.svg" alt="MasterCard logo">
+                            <img src="img/visa-logo.svg" alt="Visa logo">
+                            <img src="img/skrill-logo.svg" alt="Skrill logo">
+                            <img src="img/paypal-logo.svg" alt="PayPal logo">
+                        </div>
+                        <a href="#">Detalii despre depozitele online <i class="icon icon-arrow_right"></i></a>
+                        <hr>
+                        <p>Stimați clienți, conform OUG 18 din <strong>15 martie 2018</strong>, începând cu data de 24.03.2018, impozitul datorat pentru retragerile din conturile de joc online, în valoare de 1% (pentru sumele de până la 66750 RON) din suma retrasă, se determină și se reține la sursă.</p>
+                        <hr>
                     </div>
-                    <a href="#">Detalii despre depozitele online <i class="icon icon-arrow_right"></i></a>
-                    <hr>
-                    <p>Stimați clienți, conform OUG 18 din 15 martie 2018, începând cu data de 24.03.2018, impozitul datorat pentru retragerile din conturile de joc online, în valoare de 1% (pentru sumele de până la 66750 RON) din suma retrasă, se determină și se reține la sursă.</p>
-                    <hr>
+                    <div class="main__section-form">
+                        <h4>Faceți depozit online</h4>
+                        <form>
+                            <input type="number" name="amount" placeholder="Introduceți suma depunerii">
+                            <div class="main__section-form__money-buttons">
+                                <button>50</button>
+                                <button>100</button>
+                                <button>200</button>
+                            </div>
+                            <hr>
+                            <table>
+                                <tr>
+                                    <td>Retragere:</td>
+                                    <td> - RON</td>
+                                </tr>
+                                <tr>
+                                    <td>Impozit:</td>
+                                    <td> - RON</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <input type="submit" value="Depunere">
+                        </form>
+                    </div>
+
                 </div>
-                <div class="main__card__depozit-form">
-                    <h4>Faceți depozit online</h4>
-                    <form>
-                        <input type="number" name="amount" placeholder="Introduceți suma depunerii">
-                        <button>50</button>
-                        <button>100</button>
-                        <button>200</button>
-                        <hr>
-                        <table>
-                            <tr>
-                                <td>Retragere:</td>
-                                <td> - RON</td>
-                            </tr>
-                            <tr>
-                                <td>Impozit:</td>
-                                <td> - RON</td>
-                            </tr>
-                        </table>
-                        <hr>
-                        <input type="submit" value="Depunere">
-                    </form>
-                </div>
+                
             </section>
-            <section class="main__card">
-                <h3 class="main__card__heading">Transfer bancar <span>NOU</span> <i class="icon icon-chevron_up"></i></h3>
+            <section class="common-styles__box">
+                <h3>Transfer bancar <span>NOU</span> <i class="icon icon-chevron_down"></i></h3>
             </section>
-            <section class="main__card">
-                <h3 class="main__card__heading">Depozit Online <i class="icon icon-chevron_up"></i></h3>
+            <section class="common-styles__box">
+                <h3>Depozit Online <i class="icon icon-chevron_down"></i></h3>
             </section>
-            <section class="main__card">
-                <h3 class="main__card__heading">Pay Safe Card <span>NOU</span> <i class="icon icon-chevron_up"></i></h3>
+            <section class="common-styles__box">
+                <h3>Pay Safe Card <span>NOU</span> <i class="icon icon-chevron_down"></i></h3>
             </section>
-            <section class="main__card main__card__deposit-footer">
+            <section class="common-styles__box main__section-footer">
                 <h4>Aveți nevoie de ajutor pentru a face un depozit?</h4>
                 <p>If you have any problems with deposit of any type, don't hesitate to contact us!</p>
-                <button>Ajutor <i class="icon icon-help_circle"></i></button>            
+                <button><i class="icon icon-help_circle"></i> Ajutor</button>            
             </section>
         </div>
+        <!-- **** SIDEBAR RIGHT **** -->
         <aside class="sidebar-right">
-            <div class="sidebar-right__betting-slip-check">
+            <div class="sidebar-right__betting-slip-check common-styles__box">
                 <form>
                     <label for="">Verificare bilet <i class="icon icon-help_circle"></i></label>
-                    <input type="text" name="betting-slip-check" placeholder="Codul de verificare">
-                    <button type="submit"><i class="icon icon-chevron_right"></i></button>
+                    <div class="sidebar-right__betting-slip-check__input-group">
+                        <input type="text" name="betting-slip-check" placeholder="Codul de verificare"><button type="submit"><i class="icon icon-chevron_right"></i></button>
+                    </div>
                 </form>
             </div>
-            <div class="sidebar-right__betting-slip">
+            <div class="sidebar-right__betting-slip common-styles__box">
                 <header>
                     <h3>ONLINE BILET</h3>
                     <div class="sidebar-right__betting-slip__switch">
-                        <label><input type="radio" name="betting-slip-switch" checked>SIMPLU</label>
-                        <label><input type="radio" name="betting-slip-switch">SISTEM</label>
+                        <input type="radio" name="betting-slip-switch" id="radio_1" checked><label for="radio_1">SIMPLU</label>
+                        <input type="radio" name="betting-slip-switch" id="radio_2"><label for="radio_2">SISTEM</label>
                     </div>
                 </header>
                 <div class="sidebar-right__betting-slip__body">
                     <img src="img/betting-slip.jpg" alt="Pick some matches for your betting slip!">
+                    <p>Biletul este gol. Apasă pe cote pentru a paria.</p>
                 </div>
                 <div class="sidebar-right__betting-slip__payment">
-                    <p>Total Cote:</p>
+                    <h4>Total Cote:</h4>
                     <div class="sidebar-right__betting-slip__payment__amount">
                         <div>
                             <span>Plată:</span>
-                            <button>10</button>
-                            <button>100</button>
-                            <button>200</button>
+                            <button>10</button><button>100</button><button>200</button>
                         </div>
                         <label>RON <input type="number" id="betting-slip-amount" value="2.00"></label>
                     </div>
@@ -151,7 +163,7 @@
                         <p>0.00 <span>RON</span></p>
                     </div>
                     <div class="sidebar-right__betting-slip__payment__submit">
-                        <button ><i class="icon icon-ticket"></i></button>
+                        <button><i class="icon icon-ticket"></i></button>
                         <button>PLASEAZA PARIUL ONLINE</button>
                     </div>
                     <div class="sidebar-right__betting-slip__payment__accept-quota">
@@ -172,6 +184,7 @@
             </div>
         </aside>
     </div>
+    <!-- **** FOOTER **** -->
     <footer class="footer">
         <div>
             <ul class="footer__menu">

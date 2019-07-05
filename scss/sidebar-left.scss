@@ -1,0 +1,55 @@
+.sidebar-left {
+    width: 270px;
+
+    &__menu {
+        margin: 8px 15px 0 15px;
+
+        &__item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 36px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $darker-text;
+
+            &:before {
+                content:'';
+                display: none;
+                width: 2px;
+                height: 36px;
+                background: $main-color;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            &:hover:before, &--selected:before {
+                display: block;
+            }
+
+
+
+            + li {
+                border-top: 1px solid $light-border-menu;
+            }
+
+            i {
+                font-size: 20px;
+                color: $light-text;
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1023px) {
+
+    .sidebar-left {
+        display: none;
+    }
+    
+    
+}
