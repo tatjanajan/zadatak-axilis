@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background: #F2F4F6;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem; }
