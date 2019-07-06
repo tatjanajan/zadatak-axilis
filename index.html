@@ -167,34 +167,37 @@
                         <button>PLASEAZA PARIUL ONLINE</button>
                     </div>
                     <div class="sidebar-right__betting-slip__payment__accept-quota">
-                        <label for="accept-quota">Accept actualizarea automată a cotelor <i class="icon icon-info_circle"></i></label>
-                        <input type="checkbox" id="accept-quota" name="accept-quota" checked>
+                        <p for="accept-quota">Accept actualizarea automată a cotelor <i class="icon icon-info_circle"></i></p>
+                        <label class="container"><input type="checkbox" id="accept-quota" name="accept-quota" checked>
+                        <span class="checkmark"></span></label>
                     </div>
                 </div>
                 <footer>
-                    <label><input type="radio" name="where-to-place-bet"> ONLINE</label>
-                    <label><input type="radio" name="where-to-place-bet"> AGENȚIE</label>
+                    <div><input type="radio" name="where-to-place-bet" id="where_1" checked><label for="where_1"> ONLINE</label></div>
+                    <div><input type="radio" name="where-to-place-bet" id="where_2"><label for="where_2"> AGENȚIE</label></div>
                 </footer>
             </div>
             <div class="sidebar-right__my-betting-slips">
-                <div>
-                    <h3><i class="icon icon-ticket_2"></i> BILETELE MELE <span>4</span></h3>
-                    <i class="icon icon-chevron_up"></i>
-                </div>
+                <h3><i class="icon icon-ticket_2"></i> BILETELE MELE <span>4</span></h3>
+                <i class="icon icon-chevron_up"></i>
             </div>
         </aside>
     </div>
     <!-- **** FOOTER **** -->
     <footer class="footer">
-        <div>
-            <ul class="footer__menu">
-                <li><i class="icon icon-sport-17"></i> Sporturi</li>
-                <li><i class="icon icon-live_indicator"></i> Live</li>
-                <li><i class="icon icon-special"></i> Speciale</li>
-                <li><i class="icon icon-ticket"></i> Pariurile mele</li>
-            </ul>
+        <ul class="footer__menu">
+            <li><i class="icon icon-sport-17"></i> Sporturi</li>
+            <li><i class="icon icon-live_indicator"></i> Live</li>
+            <li><i class="icon icon-special"></i> Speciale</li>
+            <li><i class="icon icon-ticket"></i> Pariurile mele</li>
+        </ul>
+        <div class="footer__bottom">
+            <div class="footer__bottom__slider">
+                <i class="icon icon-chevron_left"></i>
+                <span></span>
+                <i class="icon icon-chevron_right"></i>
+            </div>
         </div>
-        <div></div>
     </footer>
 </body>
 </html>

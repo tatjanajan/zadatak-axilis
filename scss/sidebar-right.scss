@@ -1,5 +1,6 @@
 .sidebar-right {
     width: 350px;
+    position: relative;
 
     &__betting-slip-check, &__betting-slip {
         width: 320px;
@@ -121,7 +122,7 @@
 
         &__payment {
 
-            padding: 15px 0;
+            padding-top: 15px;
 
             h4 {
                 color: $main-color;
@@ -255,7 +256,119 @@
             }
         }
 
+        footer {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $lighter-text;
+            height: 35px;;
+            border-top: 1px solid $light-border;
+
+            div {
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                &:first-of-type {
+                    border-right: 1px solid $light-border;
+                }
+            }
+
+            input {
+                display: none;
+            }
+
+            label {
+                cursor: pointer;
+            }
+
+            input:checked + label {
+                color: $main-color;
+            }
+
+
+        }
+    }
+
+    &__my-betting-slips {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 320px;
+        height: 32px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        background: $main-color;
+        padding: 0 15px;
+        color: #fff;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
         
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: $main-darker;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            top: -6px;
+        }
+        
+        &:before {
+            left: 0;
+            width: 308px;
+            height: 6px;
+            margin-left: 5px;
+            box-shadow: 0px 0 2px 0px rgba(0, 0, 0, 0.2);
+            
+        }
+        
+        &:after {
+            top: -11px;
+            left: 0;
+            width: 296px;
+            height: 5px;
+            margin-left: 10px;
+            box-shadow: 0px 0 2px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            padding-left: 24px;
+
+            i {
+                left: 13px;
+            }
+        }
+
+        i {
+            font-size: 21px;
+            position: absolute;
+            top: 7px;
+            right: 10px;
+        }
+
+        span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            color: $main-color;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 3px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            position: absolute;
+            top: 8px;
+            left: 134px;
+        }
+
     }
 }
 
